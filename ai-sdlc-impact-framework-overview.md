@@ -32,7 +32,7 @@ AI adoption, accepted code, token use, licence allocation, and raw output are us
 
 ## Minimum metric set
 
-This is the minimum metric set for a typical AI-assisted delivery case, summarized by area, and should be tracked every reporting period. For definitions, units, categories, and collection methods, see the [metric reference](07-ai-sdlc-metric-reference.md).
+This is the minimum metric set for a typical AI-assisted delivery case, summarized by area, and should be tracked every reporting period. For definitions, units, categories, and collection methods, see the [metric reference](ai-sdlc-metric-reference.md).
 
 | Area | Minimum measures |
 |---|---|
@@ -76,7 +76,7 @@ For each case, publish one concise before/after/comparator table:
 
 Report confidence limits and caveats: sample size, missing data, work-mix changes, concurrent platform/process changes, and whether the evidence is observational rather than causal. Do not sum unlike measures into a synthetic “AI productivity score.”
 
-For definitions of each metric, why it matters, its category and units, and how to collect it from system or survey data, use the [metric reference](07-ai-sdlc-metric-reference.md).
+For definitions of each metric, why it matters, its category and units, and how to collect it from system or survey data, use the [metric reference](ai-sdlc-metric-reference.md).
 
 ## Source basis
 

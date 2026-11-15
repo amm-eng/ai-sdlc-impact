@@ -1,6 +1,6 @@
 # AI SDLC Impact Framework — Metric Reference
 
-This reference explains the metrics used by the [framework overview](00-ai-sdlc-impact-framework-overview.md): what each measures, why it matters, its role, units, and how to collect it. Use the overview for study design and decision rules, and this document to implement the measurements.
+This reference explains the metrics used by the [framework overview](ai-sdlc-impact-framework-overview.md): what each measures, why it matters, its role, units, and how to collect it. Use the overview for study design and decision rules, and this document to implement the measurements.
 
 The unit of analysis is a team, service, initiative, or comparable class of tasks. Metric definitions, denominators, survey questions, and collection rules must stay consistent between the baseline and intervention periods.
 
@@ -21,7 +21,7 @@ A metric can serve more than one role. PR size, for example, diagnoses review pr
 
 ## Minimum set and use-case selection
 
-Use the [overview's minimum metric set](00-ai-sdlc-impact-framework-overview.md#minimum-metric-set) to select the baseline measures for each reporting period.
+Use the [overview's minimum metric set](ai-sdlc-impact-framework-overview.md#minimum-metric-set) to select the baseline measures for each reporting period.
 
 Select additional measures for the use case: deployment frequency for release-flow studies, onboarding time for onboarding studies, detailed DXI drivers to investigate friction, and agent diagnostics when agents are used. This catalogue lists available measures; it does not require every submetric in every study. Service-health measures apply to production-impacting work, and governance measures follow the approvals and obligations of the workflow.
 
