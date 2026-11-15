@@ -4,6 +4,10 @@
 
 This framework evaluates whether an AI-enabled change improves the delivery of valuable software for a **defined team, service, workflow, and task class**. It is designed for team-, service-, or initiative-level decisions—not for ranking individual developers.
 
+Its primary focus begins after the problem or opportunity and solution direction are established. It assesses AI-enabled work from technical solution definition through implementation, delivery, and operation: how software is planned, built, verified, released, and run. It does not assess problem discovery and prioritisation (**why build**) or product/solution ideation and selection (**what to build**). Those earlier stages should establish the intended outcome, task class, and acceptance criteria before an assessment begins.
+
+Product or customer outcomes may still be used as downstream evidence of impact. The framework does not, however, determine whether the underlying problem or chosen solution was the right one.
+
 Its governing rule is:
 
 > Claim a positive AI productivity impact only when a meaningful outcome improves **and** quality, reliability, security, developer experience, and unit economics remain within pre-agreed guardrails.
