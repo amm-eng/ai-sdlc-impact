@@ -32,13 +32,22 @@ It does not mean the lifecycle for building AI or ML models.
 | **4. Guardrails** | Was the outcome achieved safely and sustainably? | Reliability and recovery, SLOs, code/change health, security/privacy, compliance/provenance, human sustainability, economic safety. |
 | **5. Decision** | What should happen next? | Pre-agreed thresholds applied without allowing a speed gain to offset a material safety or human-cost regression. |
 
+## Assessment modes
+
+| Mode | Use it when | What it can support |
+|---|---|---|
+| **Exploratory assessment** | You need a directional view of what changed after AI use and do not yet have a specific outcome or hypothesis to test. | Identifies signals, bottlenecks, and candidate hypotheses for a later outcome-driven assessment. It does not establish attribution, ROI, or a positive productivity claim on its own. |
+| **Outcome-driven assessment** | You need to decide whether a defined AI intervention improved a specified outcome. | Tests a pre-defined hypothesis using a primary outcome, a credible comparison, and pre-agreed guardrails and thresholds. |
+
+Both modes require a defined team, task class, intervention, observation window, exposure measure, and appropriate guardrails. Exploratory assessment may use before/after evidence to guide the next question; it should not alone justify scaling an intervention.
+
 ## How to apply it
 
-1. **Define the use case before measuring.** Specify the tool/model or agent, enabled capabilities, task class, context/data access, policy and training changes, rollout date, and accountable decision owners.
+1. **Choose a mode and define the use case before measuring.** Specify the tool/model or agent, enabled capabilities, task class, context/data access, policy and training changes, rollout date, and accountable decision owners. Outcome-driven assessment also defines the outcome and hypothesis in advance.
 2. **Choose a credible comparison.** Prefer a phased rollout or matched teams/workflows. If only before/after data is available, compare similar work in both periods—for example, low-risk API changes of comparable complexity in the same service. Avoid comparing routine maintenance before AI with complex feature development afterward. Record other changes that could explain the result, such as holidays or release freezes, incidents, team size or experience, roadmap priorities, and platform upgrades; adjust for them where possible and explain any remaining attribution limits.
-3. **Measure a compact, balanced scorecard.** Select one primary value outcome, one delivery/flow outcome, the required guardrails, and enough exposure/mechanism data to explain the result.
+3. **Measure a compact, balanced scorecard.** For outcome-driven assessment, select one primary value outcome, one delivery/flow outcome, the required guardrails, and enough exposure/mechanism data to explain the result. For exploratory assessment, use candidate value or delivery signals, flow data, exposure, and guardrails to identify what should be tested next.
 4. **Segment and inspect distributions.** Compare like with like—feature, maintenance, incident, migration, risk, service, and task complexity. For duration, size, and other distribution-based metrics, report at least P50 (median) and P75 (75th percentile), with P85/P90 where additional tail visibility is needed. Report rates and proportions in their appropriate form.
-5. **Make a threshold-led decision.** Do not use a single weighted productivity score. A serious security, privacy, compliance, or reliability regression vetoes a positive productivity claim.
+5. **Make an appropriate decision.** In outcome-driven assessment, apply the pre-agreed thresholds. In exploratory assessment, turn signals into a focused hypothesis or identify a constraint to address. Do not use a single weighted productivity score. A serious security, privacy, compliance, or reliability regression vetoes a positive productivity claim.
 
 ## Minimum metric set
 
