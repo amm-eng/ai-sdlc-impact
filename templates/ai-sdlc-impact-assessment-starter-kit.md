@@ -13,6 +13,8 @@ Use one copy of this template for one defined AI-enabled use case. Complete it b
 |---|---|
 | Assessment name |  |
 | Assessment mode | Exploratory or outcome-driven. |
+| Outcome focus area | Outcome-driven: DevEx, product delivery, or product quality. |
+| Primary outcome metric | Outcome-driven: choose one metric from the focus-area guidance and specify its instrument, unit, and definition. Distinguish satisfaction from DXI, estimated focus time from time saved, and a named code-quality attribute from overall quality. |
 | Decision to support | Exploratory: what should be investigated next? Outcome-driven: scale, adjust, constrain, stop, or another defined decision. |
 | Decision owner |  |
 | Team, service, and workflow |  |
@@ -35,7 +37,9 @@ Use one copy of this template for one defined AI-enabled use case. Complete it b
 
 ## 3. Evidence plan
 
-For outcome-driven assessment, select one primary outcome, one flow outcome, one exposure measure, and the guardrails needed for this use case. For exploratory assessment, replace the primary outcome with one or two candidate value or delivery signals.
+Use the overview's [minimum metric set](../ai-sdlc-impact-framework-overview.md#minimum-metric-set) as the baseline. For outcome-driven assessment, select one primary outcome and use the [focus-area guidance](../ai-sdlc-impact-framework-overview.md#outcome-driven-focus-areas) to identify guardrails and any additional metrics needed for the hypothesis. For exploratory assessment, use candidate value or delivery signals without a pre-defined primary hypothesis.
+
+Record the baseline measures and any additions below, using one metric per row and repeating rows as needed.
 
 | Role | Metric and operational definition | Source | Owner | Cadence |
 |---|---|---|---|---|
@@ -52,6 +56,8 @@ For each selected metric, record its unit, numerator and denominator where relev
 ## 4. Guardrails and decision rules
 
 Agree these before examining intervention results.
+
+Use the [recommended guardrails by focus area](../ai-sdlc-impact-framework-overview.md#recommended-guardrails-by-focus-area) together with the shared guardrails. Record each metric's tolerance, action, and owner; missing evidence is unknown, not a pass.
 
 | Condition | Threshold | Resulting action | Decision owner |
 |---|---|---|---|

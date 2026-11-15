@@ -62,6 +62,41 @@ This is the minimum metric set for a typical AI-assisted delivery case, summariz
 | **Economics** | Incremental AI cost and cost per verified accepted task, release, or customer outcome. |
 | **Exposure and diagnosis** | AI use by task category/mode/autonomy, test-feedback health, and—when agents are involved—context freshness/ownership, escalation rate, and token/tool cost. |
 
+## Outcome-driven focus areas
+
+Keep the minimum metric set as the baseline for every focus area. Select one primary outcome for the hypothesis, retain the other baseline measures, and add metrics only where they help test or explain that hypothesis. Baseline delivery/value measures remain required even when the primary outcome concerns developer experience or quality.
+
+| Focus area | Possible primary outcome | Additional metrics, when the hypothesis requires them |
+|---|---|---|
+| **DevEx outcomes** | Developer satisfaction, focus time (deep work), or perceived ease of delivery. | A specific DX driver, such as debugging or documentation friction; valuable-work feedback. |
+| **Product delivery outcomes** | Lead time for a defined change class, verified feature/initiative velocity, or innovation ratio. | Verified task completion rate; deployment frequency for release-flow studies; onboarding time for onboarding studies. |
+| **Product quality outcomes** | Change failure rate, code maintainability, or a specifically defined code-quality measure. | Escaped-defect or corrective rework/reopening rate; automated test and blocking-check coverage for verification studies. |
+
+Choose one primary metric from the relevant row; the listed candidates are alternatives, not a requirement to collect them all. Apply these interpretation rules:
+
+- **Developer satisfaction and DXI are distinct.** Satisfaction measures developer sentiment; DXI is an instrument-defined index of developer experience. An existing DXI may be selected as a separate primary metric, using its provider's definition. Do not relabel it as satisfaction.
+- **Focus time means time spent in concentrated, uninterrupted work.** Use a consistent survey estimate or sampled diary, define what qualifies as a focus block, and report it as estimated deep-work time. It does not establish time saved by AI or valuable output on its own.
+- **Innovation ratio measures capacity allocation.** A higher share of engineering time spent on new capabilities can support a capacity-conversion hypothesis, but does not establish faster delivery or greater customer value. Retain the baseline delivery and maintenance guardrails.
+- **Task completion rate requires verified acceptance.** Use a fixed eligible task cohort and equal follow-up windows; record unfinished, failed, and cancelled tasks explicitly. A tracker status or agent completion claim alone is insufficient.
+- **Code quality must name the attribute and measure.** Code maintainability is one quality attribute. A maintainability or quality survey measures perception; a static-analysis measure covers the configured property. Neither establishes overall product quality. Pair it with the baseline defect and reliability evidence.
+- **Change failure rate needs enough observed changes.** Report failed/total changes and compare similar risk classes over consistent follow-up windows. Zero failures in a small sample does not establish improved quality.
+
+### Recommended guardrails by focus area
+
+Use these baseline metrics to check for costs transferred to another part of delivery. Agree a tolerance and an action for each selected guardrail before examining intervention results. These recommendations emphasise particular risks; they do not replace the remaining baseline guardrails.
+
+| Focus area | Guardrail metrics to emphasise | What they protect |
+|---|---|---|
+| **DevEx outcomes** | Scoped lead time (P50/P75); escaped-defect or corrective rework/reopening rate; work-intensity feedback. | An easier developer experience should not conceal slower delivery, poorer output, or increased workload. |
+| **Product delivery outcomes** | Change failure rate; escaped-defect or corrective rework/reopening rate; work-intensity and change-confidence feedback. | Faster delivery or greater allocation to innovation should not create failures, deferred corrective work, or unsustainable verification pressure. |
+| **Product quality outcomes** | Scoped lead time (P50/P75); perceived ease of delivery; work-intensity feedback. | Quality improvements should not rely on unacceptable delivery delays, friction, or workload. |
+
+**Shared across all focus areas:** security/privacy events and required approval coverage; relevant SLO/error-budget state and recovery/rollback evidence for production-impacting work; incremental AI cost and cost per verified outcome. Apply existing obligations and service objectives, and agree economic tolerances for the assessment.
+
+A metric can be a primary outcome in one assessment and a guardrail in another; collect it once. Use the same task class, denominators, survey wording, and observation rules across comparison periods. Separate escaped defects by severity and use a consistent follow-up window. Missing guardrail evidence is unknown, not a pass.
+
+If an outcome improves while a guardrail exceeds its tolerance, constrain the use case and investigate before scaling. A material security, privacy, compliance, SLO, or reliability breach retains the framework's stop/rollback rule. Use baseline review and CI evidence to diagnose constraints; expand the diagnostics only where the hypothesis or results require it.
+
 ## Decision rules
 
 | Evidence pattern | Framework decision |
