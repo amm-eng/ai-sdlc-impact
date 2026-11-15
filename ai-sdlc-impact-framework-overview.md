@@ -10,6 +10,12 @@ Its governing rule is:
 
 AI adoption, accepted code, token use, licence allocation, and raw output are useful exposure or diagnostic signals. They do not, by themselves, demonstrate value or ROI.
 
+## Definition of AI SDLC
+
+In this framework, **AI SDLC** means building and delivering software with AI assistance. It includes assistive and agentic capabilities used across software delivery—for example, planning, coding, review, testing, release, and operations—where they affect the delivery of software.
+
+It does not mean the lifecycle for building AI or ML models. Tools mainly used to build AI products, such as agent frameworks or LLM tracing tools, are in scope only when they are used in a software-development role.
+
 ## The framework at a glance
 
 `AI intervention → effective exposure and delivery mechanisms → verified delivery or value outcome → safe, sustainable, economic decision`
