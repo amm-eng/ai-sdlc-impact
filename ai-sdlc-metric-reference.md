@@ -119,3 +119,7 @@ AI-authored-code share, suggestion acceptance, accepted LOC, prompt count, raw P
 Before comparing results, record the metric owner, operational definition/formula, category, unit, collection source, eligible population, time window, clock conventions, exclusions, missing-data treatment, and baseline/intervention values. For surveys, also record the exact question, scale/scoring, respondent count, response rate, and cohort. For guardrails, agree the tolerance and decision owner before examining results.
 
 Keep definitions versioned. If tooling, classification, or scoring changes, document the break and reprocess comparable periods where possible. Use the overview's reporting template to combine metric results with the comparison and guardrail decision.
+
+---
+
+*Created by [@amm-eng](https://github.com/amm-eng). Released under the [MIT License](LICENSE).*

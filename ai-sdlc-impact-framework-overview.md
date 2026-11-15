@@ -107,3 +107,7 @@ The framework draws on these key sources:
 - [DX — State of AI Impact in Engineering: Q3 Report (2026)](https://getdx.com/report/state-of-ai-impact-in-engineering-q3-report/).
 
 The framework draws on the baseline sources listed above and was informed and iterated through production observations across multiple DevOps cloud-native teams and one team application to assess AI impact.
+
+---
+
+*Created by [@amm-eng](https://github.com/amm-eng). Released under the [MIT License](LICENSE).*

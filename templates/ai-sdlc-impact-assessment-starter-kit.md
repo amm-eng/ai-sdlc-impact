@@ -75,3 +75,7 @@ Agree these before examining intervention results.
 **Decision:**
 **Confidence and limitations:** Sample size, missing data, work-mix differences, concurrent changes, and attribution limits.
 **Next review date:**
+
+---
+
+*Created by [@amm-eng](https://github.com/amm-eng). Released under the [MIT License](../LICENSE).*
