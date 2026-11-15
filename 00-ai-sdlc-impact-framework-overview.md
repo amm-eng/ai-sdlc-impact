@@ -1,0 +1,90 @@
+# AI SDLC Impact Framework — Overview
+
+## What this framework is for
+
+This framework evaluates whether an AI-enabled change improves the delivery of valuable software for a **defined team, service, workflow, and task class**. It is designed for team-, service-, or initiative-level decisions—not for ranking individual developers.
+
+Its governing rule is:
+
+> Claim a positive AI productivity impact only when a meaningful outcome improves **and** quality, reliability, security, developer experience, and unit economics remain within pre-agreed guardrails.
+
+AI adoption, accepted code, token use, licence allocation, and raw output are useful exposure or diagnostic signals. They do not, by themselves, demonstrate value or ROI.
+
+## The framework at a glance
+
+`AI intervention → effective exposure and delivery mechanisms → verified delivery or value outcome → safe, sustainable, economic decision`
+
+| Layer | Question it answers | Evidence to use |
+|---|---|---|
+| **1. Study frame** | What changed, for whom, and compared with what? | Intervention definition, task class, population, baseline/comparator, observation window, success hypothesis, decision owner. |
+| **2. Exposure and mechanisms** | Did the intended AI use occur, and where does work flow or stall? | Effective AI use by task category/mode/autonomy, complexity-adjusted throughput, review capacity (time to first review and review turnaround), CI queues, batch size, test feedback, context readiness, developer friction. |
+| **3. Primary outcomes** | Did valuable delivery improve? | Lead time for a defined change class, verified feature velocity, flow efficiency, capacity conversion, product/customer outcome, onboarding, developer effectiveness. |
+| **4. Guardrails** | Was the outcome achieved safely and sustainably? | Reliability and recovery, SLOs, code/change health, security/privacy, compliance/provenance, human sustainability, economic safety. |
+| **5. Decision** | What should happen next? | Pre-agreed thresholds applied without allowing a speed gain to offset a material safety or human-cost regression. |
+
+## How to apply it
+
+1. **Define the use case before measuring.** Specify the tool/model or agent, enabled capabilities, task class, context/data access, policy and training changes, rollout date, and accountable decision owners.
+2. **Choose a credible comparison.** Prefer a phased rollout or matched teams/workflows. If only before/after data is available, compare similar work in both periods—for example, low-risk API changes of comparable complexity in the same service. Avoid comparing routine maintenance before AI with complex feature development afterward. Record other changes that could explain the result, such as holidays or release freezes, incidents, team size or experience, roadmap priorities, and platform upgrades; adjust for them where possible and explain any remaining attribution limits.
+3. **Measure a compact, balanced scorecard.** Select one primary value outcome, one delivery/flow outcome, the required guardrails, and enough exposure/mechanism data to explain the result.
+4. **Segment and inspect distributions.** Compare like with like—feature, maintenance, incident, migration, risk, service, and task complexity. For duration, size, and other distribution-based metrics, report at least P50 (median) and P75 (75th percentile), with P85/P90 where additional tail visibility is needed. Report rates and proportions in their appropriate form.
+5. **Make a threshold-led decision.** Do not use a single weighted productivity score. A serious security, privacy, compliance, or reliability regression vetoes a positive productivity claim.
+
+## Minimum metric set
+
+This is the minimum metric set for a typical AI-assisted delivery case, summarized by area, and should be tracked every reporting period. For definitions, units, categories, and collection methods, see the [metric reference](07-ai-sdlc-metric-reference.md).
+
+| Area | Minimum measures |
+|---|---|
+| **Value and flow** | One primary value outcome (verified feature/initiative velocity or scoped lead time), complexity-adjusted throughput, P50/P75 lead time plus P85/P90 tail visibility, time to first review (P50/P75), review turnaround, and CI queue time. |
+| **Capacity and people** | Reclaimed-capacity allocation or innovation ratio, plus a short ease-of-delivery / valuable-work / friction pulse. |
+| **Reliability and change health** | Change failure rate, recovery or rollback, relevant SLO/error-budget state, batch size, rework/revert/escaped-defect rate, and change confidence. |
+| **Security and governance** | Security/privacy policy events and required approvals, traceability, and provenance. |
+| **Economics** | Incremental AI cost and cost per verified accepted task, release, or customer outcome. |
+| **Exposure and diagnosis** | AI use by task category/mode/autonomy, test-feedback health, and—when agents are involved—context freshness/ownership, escalation rate, and token/tool cost. |
+
+## Decision rules
+
+| Evidence pattern | Framework decision |
+|---|---|
+| Primary delivery/value outcome improves; guardrails are stable or better; unit economics are acceptable | **Scale cautiously**, validate across task types and teams, and keep monitoring lagging risks. |
+| Leading indicators improve, but the primary outcome is flat | **Diagnose before scaling.** Gains may be trapped in review, CI/CD, requirements, meetings, or maintenance. |
+| Speed or throughput improves while reliability, code health, security, or developer experience worsens | **Do not claim productivity.** Constrain scope/autonomy, improve verification/context/rollback, and retest. |
+| AI adoption or AI-authored-code share rises without verified outcome movement | **No impact established.** Treat this as enablement data, not ROI. |
+| A material security, privacy, compliance, SLO, or reliability breach occurs | **Stop or roll back the affected use case** until safeguards and human review are corrected. |
+
+## Interpretation principles
+
+- **Impact is not activity.** Higher usage, accepted LOC, prompts, tokens, or PR counts can coexist with poorer customer value, reliability, or developer experience.
+- **The system is the unit of improvement.** A coding gain is not a delivery gain if it creates a review, CI, testing, operational, or coordination bottleneck downstream.
+- **Context is a moderator for agentic work.** Clear, actionable, current, efficient, and secure context can explain outcome differences; it is not a productivity score on its own.
+- **Correlation is not attribution.** Observational pre/post evidence should state its limits and never assume that AI alone caused a change.
+- **Avoid individual surveillance.** Use aggregate team/service data and protect psychological safety.
+
+## Reporting template
+
+For each case, publish one concise before/after/comparator table:
+
+| Metric group | Baseline | Intervention period | Comparator / adjusted delta | Guardrail status | Interpretation |
+|---|---:|---:|---:|---|---|
+| AI exposure and task mix |  |  |  | Informational | Did the intended change actually occur? |
+| Primary value outcome |  |  |  | Required | Is there evidence of more valuable delivery? |
+| Flow and experience outcomes |  |  |  | Required | Did the system, not only code generation, improve? |
+| Reliability and code health |  |  |  | Hard gate | Was output delivered safely and sustainably? |
+| Security/compliance |  |  |  | Hard gate | Was risk acceptable? |
+| Cost and capacity conversion |  |  |  | Required for ROI | Did savings become value at acceptable cost? |
+
+Report confidence limits and caveats: sample size, missing data, work-mix changes, concurrent platform/process changes, and whether the evidence is observational rather than causal. Do not sum unlike measures into a synthetic “AI productivity score.”
+
+For definitions of each metric, why it matters, its category and units, and how to collect it from system or survey data, use the [metric reference](07-ai-sdlc-metric-reference.md).
+
+## Source basis
+
+The framework draws on these key sources:
+
+- [DORA — Impact of Generative AI in Software Development (2025)](https://dora.dev/ai/gen-ai-report/).
+- [DORA — State of AI-assisted Software Development (2025)](https://dora.dev/research/2025/dora-report/).
+- [DX — State of AI Impact in Engineering: Q2 Report (2026)](https://getdx.com/report/state-of-ai-impact-in-engineering-q2-report/).
+- [DX — State of AI Impact in Engineering: Q3 Report (2026)](https://getdx.com/report/state-of-ai-impact-in-engineering-q3-report/).
+
+The framework was built from the baseline sources listed above, validated and refined under real production conditions through observation of multiple DevOps cloud-native teams, and tested and applied to validate AI impact for one team.
